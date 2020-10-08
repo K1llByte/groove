@@ -1,0 +1,56 @@
+@import "constants.css";
+
+.root {
+    -fx-background-color: selector-color;
+}
+
+/* ---------- HBOXES ---------- */
+.hboxes {
+    -fx-border-color:  #BEBFC1;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 25px;
+}
+
+/* ---------- TEXTFIELDS ---------- */
+.ru_textfields {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* ---------- ADMIN CHECKBOX ---------- */
+.admin_checkbox {
+    -fx-border-color: choosed-theme;
+    -fx-background-color: selector-color;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-width: 3px;
+}
+.admin_checkbox:selected {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}
+.admin_checkbox_label {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-family: MADEEvolveSans-Medium;
+}
+
+/* ---------- ERROR MESSAGE ---------- */
+.error_message {
+    -fx-font-family: MADEEvolveSans-Medium;
+    -fx-text-fill: #f05348;
+}
+
+/* ---------- REGISTER BUTTON ---------- */
+.register_button {
+    -fx-border-color: choosed-theme;
+    -fx-background-color: selector-color;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-width: 3px;
+}
+.register_button:hover {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}

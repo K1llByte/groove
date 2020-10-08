@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="430.0" styleClass="media_cell_background" stylesheets="@../css/media_cell.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="hbox" prefHeight="100.0" prefWidth="430.0">
+         <children>
+            <ImageView fx:id="thumbnail" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/default-release-cd.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="100.0" prefWidth="330.0">
+               <children>
+                  <Label fx:id="name" layoutX="22.0" layoutY="15.0" prefHeight="35.0" prefWidth="289.0" styleClass="name" text="Unknown" textFill="#d0d0d0">
+                     <font>
+                        <Font name="Noto Serif Tamil Slanted Thin" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="author" layoutX="22.0" layoutY="55.0" prefHeight="25.0" prefWidth="289.0" styleClass="author" text="Unknown" textFill="#aeaeae">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

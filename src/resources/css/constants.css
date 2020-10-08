@@ -1,0 +1,31 @@
+/* ---------- RESOURCES LOAD ---------- */
+
+@font-face {
+    -fx-font-family: UbuntuCondensed-Regular;
+    src: url('../fonts/UbuntuCondensed-Regular.ttf');
+}
+
+@font-face {
+    -fx-font-family: MADEEvolveSans-Medium;
+    src: url('../fonts/MADEEvolveSansMedium.otf');
+}
+
+/* ---------- CONSTANTS ---------- */
+* {
+    -fx-primary : #2A2E37;
+    -fx-primary-2 : #333a47;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+
+    menu-color: #191B20;
+    selector-color: #252830;
+    player-color: #313641;
+    player-bar-color: #3B414F;
+
+    /* THEMES */
+    theme-horizon: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    theme-earth: linear-gradient(to right, #24a2f0 0%, #24f07c 100%);
+    theme-true-horizon: linear-gradient(to right, #ff4570 0%, #b37e6b 100%);
+    theme-night: linear-gradient(to right, #00a67c 0%, #1b695f 100%);
+    choosed-theme: theme-true-horizon;
+}

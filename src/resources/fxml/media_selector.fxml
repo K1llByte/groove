@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+
+
+<ListView fixedCellSize="100.0" prefHeight="1080.0" prefWidth="440.0" styleClass="list_media" stylesheets="@../css/media_selector.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" />

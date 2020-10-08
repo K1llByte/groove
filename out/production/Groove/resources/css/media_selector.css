@@ -1,0 +1,120 @@
+@import "constants.css";
+
+/* ------------------------ MEDIA LIST SELECTOR ------------------------ */
+
+.list_media {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list_media:pressed:hover {
+    -fx-background-color: -fx-primary;
+}
+
+/* ------------------------ MEDIA LIST SELECTOR ------------------------ */
+
+.list_media .list-cell{
+    -fx-padding: 0px;
+    -fx-label-padding: 0px;
+    -fx-border-width: 0px;
+    -fx-cell-hover-color: selector-color;
+    -fx-background-color: selector-color;
+}
+.list_media .list-cell:filled:selected:focused,
+.list_media .list-cell:filled:selected {
+    -fx-background-color: selector-color/*linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%)*/;
+    -fx-text-fill: selector-color;
+}
+.list_media .list-cell:odd {
+    -fx-cell-hover-color: selector-color;
+    -fx-background-color: selector-color;
+}
+.list_media .list-cell:filled:hover {
+    -fx-cell-hover-color: selector-color;
+    -fx-text-fill: selector-color;
+}
+
+/* ------------------------ SCROLL BAR ------------------------ */
+
+.list_media .scroll-bar:horizontal ,
+.list_media .scroll-bar:vertical{
+    -fx-background-color:transparent;
+
+}
+.list_media .scroll-bar:horizontal .track ,
+.list_media .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(gray,80%);
+    -fx-background-radius: 0em;
+}
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.list_media .scroll-bar:horizontal .thumb,
+.list_media .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+    -fx-opacity: 0.4;
+}
+.list_media .scroll-bar:horizontal:hover .track ,
+.list_media .scroll-bar:horizontal:pressed .track ,
+.list_media .scroll-bar:horizontal:focused .track ,
+.list_media .scroll-bar:vertical:hover .track,
+.list_media .scroll-bar:vertical:pressed .track,
+.list_media .scroll-bar:vertical:focused .track {
+    -fx-background-color: -fx-primary/*derive(#434343,20%)*/;
+}
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+.list_media .scroll-bar .thumb:hover,
+.list_media .scroll-bar .thumb:pressed{
+    -fx-background-color: blue/*derive(black,50%)*/;
+}
+.list_media .increment-button:hover ,
+.list_media .decrement-button:hover {
+    -fx-background-color:derive(gray,100%);
+    -fx-border-color:derive(gray,80%);
+    -fx-padding:10px;
+}
+/* The main scrollbar **track** CSS class  */
+.list_media .scroll-bar:horizontal .track,
+.list_media .scroll-bar:vertical .track{
+    -fx-background-color: -fx-primary;
+    -fx-border-color:-fx-primary;
+    -fx-background-radius: 0em;
+    -fx-border-radius:2em;
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+.list_media .scroll-bar:horizontal .increment-button ,
+.list_media .scroll-bar:horizontal .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 0 10 0;
+
+}
+/* The increment and decrement button CSS class of scrollbar */
+.list_media .scroll-bar:vertical .increment-button ,
+.list_media .scroll-bar:vertical .decrement-button {
+
+    -fx-background-color:transparent;
+    -fx-background-radius: 0em;
+    -fx-padding:0 10 0 0;
+
+}
+
+.list_media  .scroll-bar .increment-arrow,
+.list_media  .scroll-bar .decrement-arrow{
+    -fx-shape: " ";
+    -fx-padding:0;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.list_media .scroll-bar:horizontal .thumb,
+.list_media .scroll-bar:vertical .thumb {
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+.list_media .scroll-bar .thumb:hover,
+.list_media .scroll-bar .thumb:pressed{
+    -fx-background-color: derive(grey,90%);
+}

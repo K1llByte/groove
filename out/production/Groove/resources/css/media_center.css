@@ -1,0 +1,126 @@
+/* ---------- RESOURCES LOAD ---------- */
+
+@import "constants.css";
+
+/* ---------- MENU ---------- */
+.menu {
+    -fx-background-color : menu-color;
+    -fx-border-width: 0px;
+    -fx-padding: 0px;
+}
+
+
+.main_menu {
+    -fx-background-color: transparent;
+    -fx-background-image: url(../images/main_menu.png);
+}
+.main_menu:hover {
+    -fx-background-image: url(../images/main_menu_hover.png);
+}
+.main_menu:disabled {
+    -fx-background-image: url(../images/main_menu_selected.png);
+    -fx-opacity: 1;
+}
+
+.add_user {
+    -fx-background-color: transparent;
+    -fx-background-image: url(../images/add_user.png);
+}
+.add_user:hover {
+    -fx-background-image: url(../images/add_user_hover.png);
+}
+.add_user:disabled {
+    -fx-background-image: url(../images/add_user_selected.png);
+    -fx-opacity: 1;
+}
+
+.add_media {
+    -fx-background-color: transparent;
+    -fx-background-image: url(../images/add_media.png);
+}
+.add_media:hover {
+    -fx-background-image: url(../images/add_media_hover.png);
+}
+.add_media:disabled {
+    -fx-background-image: url(../images/add_media_selected.png);
+    -fx-opacity: 1;
+}
+
+.log_in_out {
+    -fx-background-color: transparent;
+    -fx-background-image: url(../images/login.png);
+}
+.log_in_out:hover {
+    -fx-background-image: url(../images/login_hover.png);
+}
+.log_in_out:selected {
+    -fx-background-image: url(../images/logout.png);
+    -fx-opacity: 1;
+}
+
+/* ---------- SELECTOR ---------- */
+.selector {
+    -fx-border-width: 0px;
+    -fx-background-color : selector-color;
+}
+
+/* ---------- PLAYER ---------- */
+.player {
+    -fx-background-color : player-color;
+}
+
+.player_bar_background {
+
+}
+.player_bar {
+    /*-fx-opacity: 0.4;*/
+    -fx-background-radius: 5px;
+    -fx-background-color: rgb(59, 65, 79);
+
+    /*-fx-border-width: 3px;
+    -fx-border-radius: 5px;
+    -fx-border-color: choosed-theme;*/
+}
+.play-button {
+    -fx-fill: choosed-theme;
+}
+.progress_bar .thumb{
+    -fx-background-color: choosed-theme;
+}
+.progress_bar .track{
+    -fx-background-color: #687896;
+}
+.time_now {
+
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-family: UbuntuCondensed-Regular;
+}
+.time_total {
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-family: UbuntuCondensed-Regular;
+}
+
+/* ---------- PLAYER PANEL ---------- */
+
+.media_view_pane {
+    -fx-background-color: menu-color;
+}
+
+/* ---------- CLOSE BUTTON ---------- */
+.cross {
+    -fx-image: url(../images/cross-unselected.png) 0 0;
+}
+.cross:hover {
+    -fx-image: url(../images/cross.png) 0 0;
+}
+
+/* ---------- MINIMIZE BUTTON ---------- */
+.minimize {
+    -fx-image: url(../images/minimize-unselected.png) 0 0;
+}
+.minimize:hover {
+    -fx-image: url(../images/minimize.png) 0 0;
+}
+
+
+/* --------------- TESTS --------------- */

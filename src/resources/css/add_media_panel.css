@@ -1,0 +1,101 @@
+@import "constants.css";
+
+.root {
+    -fx-background-color: selector-color;
+}
+
+/* ---------- HBOXES ---------- */
+.hboxes {
+    -fx-border-color:  #BEBFC1;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 25px;
+}
+
+/* ---------- TEXTFIELDS ---------- */
+.ru_textfields {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.error_message {
+    -fx-font-family: MADEEvolveSans-Medium;
+    -fx-text-fill: #f05348;
+}
+
+.file_path {
+    -fx-alignment: center;
+    -fx-font-family: MADEEvolveSans-Medium;
+    -fx-text-fill: #d4d4d4;
+}
+
+.genre_choice {
+    -fx-background-color: transparent;
+    -fx-border-width: 3;
+    -fx-border-radius: 25px;
+    -fx-border-color: choosed-theme;
+}
+.genre_choice .label {
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-size: 19;
+}
+.genre_choice .context-menu {
+    -fx-background-color: selector-color;
+    -fx-pref-width: 300;
+}
+.genre_choice .menu-item:focused {
+    -fx-background-color: choosed-theme;
+}
+.genre_choice .arrow {
+    -fx-background-color: choosed-theme;
+}
+
+/* ---------- REGISTER BUTTON ---------- */
+.add_media_button {
+    -fx-border-color: choosed-theme;
+    -fx-background-color: selector-color;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-width: 3px;
+}
+.add_media_button:hover {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}
+
+/* ---------- Audio Choice button ---------- */
+.audio_button {
+    -fx-border-color: choosed-theme;
+    -fx-background-color: selector-color;
+    -fx-border-radius: 25px 0px 0px 25px;
+    -fx-background-radius: 25px 0px 0px 25px;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-width: 3px;
+}
+.audio_button:hover {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}
+.audio_button:selected {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}
+
+/* ---------- Video Choice button ---------- */
+.video_button {
+    -fx-border-color: choosed-theme;
+    -fx-background-color: selector-color;
+    -fx-border-radius: 0px 25px 25px 0px;
+    -fx-background-radius: 0px 25px 25px 0px;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-width: 3px;
+}
+.video_button:hover {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}
+.video_button:selected {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="600.0" styleClass="root" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <Label fx:id="groove_logo" alignment="CENTER" layoutX="172.0" layoutY="93.0" styleClass="groove_logo" stylesheets="@../css/login.css" text="Groove">
+         <font>
+            <Font name="MADEEvolveSans-Medium" size="83.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#13bceb80" />
+                  <Stop color="#13bceb80" offset="0.007407407407407408" />
+                  <Stop color="#11bded7d" offset="0.007407407407407408" />
+                  <Stop color="#ff05ea80" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <HBox layoutX="137.0" layoutY="250.0" prefHeight="53.0" prefWidth="326.0" styleClass="hboxes" stylesheets="@../css/login.css">
+         <children>
+            <TextField fx:id="email_textfield" alignment="CENTER" prefHeight="51.0" prefWidth="324.0" promptText="Email" styleClass="textfields" stylesheets="@../css/login.css" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="137.0" layoutY="317.0" prefHeight="53.0" prefWidth="326.0" styleClass="hboxes" stylesheets="@../css/login.css">
+         <children>
+            <PasswordField fx:id="password_textfield" alignment="CENTER" prefHeight="50.0" prefWidth="329.0" promptText="Password" styleClass="textfields" stylesheets="@../css/login.css">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <Button fx:id="login_button" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="455.0" mnemonicParsing="false" onAction="#loginEvent" prefHeight="51.0" prefWidth="324.0" styleClass="login_button" stylesheets="@../css/login.css" text="Login">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="cross" fitHeight="23.0" fitWidth="23.0" layoutX="563.0" layoutY="14.0" onMouseClicked="#close" opacity="0.8" pickOnBounds="true" preserveRatio="true" styleClass="cross" />
+      <ImageView fx:id="minimize" fitHeight="33.0" fitWidth="23.0" layoutX="534.0" layoutY="14.0" onMouseClicked="#minimize" opacity="0.8" pickOnBounds="true" preserveRatio="true" styleClass="minimize" />
+      <Label fx:id="error_message" alignment="CENTER" contentDisplay="CENTER" layoutX="137.0" layoutY="398.0" prefHeight="36.0" prefWidth="326.0" styleClass="error_message" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

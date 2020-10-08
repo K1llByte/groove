@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="root" prefHeight="1080.0" prefWidth="1920.0" scaleShape="false" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppController">
+   <children>
+      <AnchorPane fx:id="menu" pickOnBounds="false" prefHeight="1080.0" prefWidth="100.0" styleClass="menu" stylesheets="@../css/login.css">
+         <children>
+            <ToggleButton fx:id="option_menu" mnemonicParsing="false" onMouseClicked="#main_menu" prefHeight="100.0" prefWidth="100.0" styleClass="main_menu" />
+            <ToggleButton fx:id="add_user" layoutY="100.0" mnemonicParsing="false" onMouseClicked="#load_register_user" prefHeight="100.0" prefWidth="100.0" styleClass="add_user" />
+            <ToggleButton fx:id="add_media" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#load_add_media" prefHeight="100.0" prefWidth="100.0" styleClass="add_media" />
+            <ToggleButton fx:id="log_in_out" layoutY="980.0" mnemonicParsing="false" onMouseClicked="#load_login" prefHeight="100.0" prefWidth="100.0" styleClass="log_in_out" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="selector" layoutX="100.0" prefHeight="1080.0" prefWidth="440.0" styleClass="selector" stylesheets="@../css/login.css" />
+      <AnchorPane fx:id="player" layoutX="540.0" prefHeight="1080.0" prefWidth="1380.0" styleClass="player" stylesheets="@../css/login.css">
+         <children>
+            <StackPane fx:id="media_view_background" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="788.0" prefWidth="1380.0" styleClass="media_view_pane" AnchorPane.bottomAnchor="146.0" AnchorPane.topAnchor="146.0">
+               <children>
+                  <MediaView fx:id="media_view" fitHeight="788.0" fitWidth="1380.0" onMouseClicked="#play_and_pause" styleClass="cross" />
+               </children>
+            </StackPane>
+            <AnchorPane fx:id="top_grabable" prefHeight="146.0" prefWidth="1380.0">
+               <children>
+                  <ImageView fx:id="cross" fitHeight="23.0" fitWidth="23.0" layoutX="1337.0" layoutY="20.0" onMouseClicked="#close" pickOnBounds="true" preserveRatio="true" styleClass="cross" />
+                  <ImageView fx:id="minimize" fitHeight="23.0" fitWidth="23.0" layoutX="1304.0" layoutY="20.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true" styleClass="minimize" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="934.0" prefHeight="146.0" prefWidth="1380.0">
+               <children>
+                  <AnchorPane prefHeight="50.0" prefWidth="1380.0" styleClass="player_bar_background">
+                     <children>
+                        <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="40.0" prefWidth="1370.0" styleClass="player_bar" stylesheets="@../css/media_center.css">
+                           <children>
+                              <Label fx:id="time_now" layoutX="55.0" layoutY="12.0" styleClass="time_now" stylesheets="@../css/media_center.css" text="00:00" textFill="#c6c6c6" translateX="-5.0" />
+                              <FontAwesomeIconView fx:id="play_button" glyphName="PAUSE" layoutX="11.0" layoutY="31.0" onMouseClicked="#play_and_pause" size="30" styleClass="play-button" wrappingWidth="23.0" />
+                              <Slider fx:id="slider" layoutX="96.0" layoutY="12.0" prefHeight="16.0" prefWidth="1220.0" styleClass="progress_bar" />
+                              <Label fx:id="time_total" layoutX="1316.0" layoutY="12.0" styleClass="time_total" text="00:00" translateX="4.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/login.css" />
+      <URL value="@../css/media_center.css" />
+   </stylesheets>
+</AnchorPane>

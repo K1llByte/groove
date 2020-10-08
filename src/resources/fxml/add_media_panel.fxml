@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="440.0" styleClass="root" stylesheets="@../css/add_media_panel.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddMediaController">
+   <children>
+      <HBox layoutX="57.0" layoutY="446.0" prefHeight="53.0" prefWidth="326.0" styleClass="hboxes">
+         <children>
+            <TextField fx:id="name_field" alignment="CENTER" prefHeight="51.0" prefWidth="324.0" promptText="Name" styleClass="ru_textfields" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox fx:id="author_hbox" layoutX="57.0" layoutY="551.0" prefHeight="53.0" prefWidth="326.0" styleClass="hboxes">
+         <children>
+            <TextField fx:id="author_field" alignment="CENTER" prefHeight="51.0" prefWidth="324.0" promptText="Author" styleClass="ru_textfields" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="add_media_button" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="909.0" mnemonicParsing="false" onAction="#add_media" prefHeight="51.0" prefWidth="324.0" styleClass="add_media_button" text="Add Media">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="error_message" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="758.0" prefHeight="128.0" prefWidth="326.0" styleClass="error_message" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="genre_choicebox" layoutX="58.0" layoutY="656.0" prefHeight="51.0" prefWidth="324.0" styleClass="genre_choice" stylesheets="@../css/add_media_panel.css" />
+      <Button fx:id="file_chooser_button" alignment="CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="280.0" mnemonicParsing="false" onAction="#choose_file" prefHeight="51.0" prefWidth="229.0" styleClass="add_media_button" text="Choose file">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="file_choosed_label" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="348.0" prefHeight="51.0" prefWidth="324.0" styleClass="file_path" textAlignment="CENTER" textFill="#9e9e9e">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ToggleButton fx:id="audio_toggle" layoutX="57.0" layoutY="181.0" mnemonicParsing="false" onAction="#switch_add_audio" prefHeight="51.0" prefWidth="158.0" styleClass="audio_button" text="Audio">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </ToggleButton>
+      <ToggleButton fx:id="video_toggle" layoutX="224.0" layoutY="181.0" mnemonicParsing="false" onAction="#switch_add_video" prefHeight="51.0" prefWidth="158.0" styleClass="video_button" text="Video">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </ToggleButton>
+   </children>
+</AnchorPane>

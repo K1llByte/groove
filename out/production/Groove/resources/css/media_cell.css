@@ -1,0 +1,23 @@
+/* ---------- RESOURCES LOAD ---------- */
+
+@import "constants.css";
+
+/* ---------- MEDIA LIST CELL ---------- */
+
+.media_cell_background {
+    -fx-background-color: -fx-primary;
+}
+
+.media_cell_background:hover {
+    -fx-background-color: selector-color;
+}
+
+.name {
+    -fx-font-family: MADEEvolveSans-Medium;
+    -fx-font-size: 26;
+}
+
+.author {
+    -fx-font-family: MADEEvolveSans-Medium;
+    -fx-font-size: 21;
+}

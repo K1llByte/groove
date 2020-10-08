@@ -1,0 +1,66 @@
+/* ---------- RESOURCES LOAD ---------- */
+
+@import "constants.css";
+
+/* ---------- BACKGROUND PANE ---------- */
+.root {
+    -fx-background-color : -fx-primary;
+}
+
+/* ---------- GROOVE LOGO ---------- */
+.groove_logo {
+    -fx-font-family: MADEEvolveSans-Medium;
+    -fx-text-fill: choosed-theme;
+}
+
+/* ---------- HBOXES ---------- */
+.hboxes {
+    -fx-border-color:  #BEBFC1;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 25px;
+}
+
+/* ---------- TEXTFIELDS ---------- */
+.textfields {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* ---------- ERROR MESSAGE ---------- */
+.error_message {
+    -fx-font-family: MADEEvolveSans-Medium;
+    -fx-text-fill: #f05348;
+}
+
+/* ---------- LOGIN BUTTON ---------- */
+.login_button {
+    -fx-border-color: choosed-theme;
+    -fx-background-color: -fx-primary;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-text-fill: -fx-primarytext;
+    -fx-border-width: 3px;
+}
+.login_button:hover {
+    -fx-background-color: choosed-theme;
+    -fx-text-fill: white;
+}
+
+/* ---------- CLOSE BUTTON ---------- */
+.cross {
+    -fx-image: url(../images/cross-unselected.png) 0 0;
+}
+.cross:hover {
+    -fx-image: url(../images/cross.png) 0 0;
+}
+
+/* ---------- MINIMIZE BUTTON ---------- */
+.minimize {
+    -fx-image: url(../images/minimize-unselected.png) 0 0;
+}
+.minimize:hover {
+    -fx-image: url(../images/minimize.png) 0 0;
+}
+
+/* ================== APP ================== */
+
